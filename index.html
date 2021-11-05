@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.55/dist/themes/light.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.55/dist/shoelace.js"></script>
+    <script src="https://kit.fontawesome.com/e46af2e0b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="splash">
+        <h1 class="fade-in">Now Loading Information...</h1>
+        <svg class="loading" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1585 500" width="1585" height="500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs><path class="cls-1 svg-elem-1" d="M135,127A173.51,173.51,0,0,1,257,76V424A174,174,0,0,1,135,127Z"></path><rect class="cls-1 svg-elem-2" x="275" y="76" width="250" height="348"></rect><rect class="cls-1 svg-elem-3" x="543" y="76" width="250" height="348"></rect><rect class="cls-1 svg-elem-4" x="811" y="76" width="250" height="348"></rect><rect class="cls-1 svg-elem-5" x="1079" y="76" width="250" height="348"></rect><path class="cls-1 svg-elem-6" d="M1502,250a174,174,0,0,1-155,173V77A174,174,0,0,1,1502,250Z"></path></svg>
+    </div>
+    <!-- side bar nav -->
+    <nav class="sidenav anim2">
+        <a id="whatBtn" href="#what">
+            <svg id="what-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs>
+                <path class="cls-1 what-elem-1" d="M251,27.5c121.78,0,220.5,98.72,220.5,220.5S372.78,468.5,251,468.5,30.5,369.78,30.5,248,129.22,27.5,251,27.5m0-20a240.56,240.56,0,0,0-93.62,462.09A240.56,240.56,0,0,0,344.62,26.41,238.94,238.94,0,0,0,251,7.5Z"></path>
+                <path class="cls-1 what-elem-2" d="M215.27,143.09c0-18,14.36-32,35.73-32s35.73,13.27,35.73,31c0,19.15-14.37,33.15-35.73,33.15S215.27,161.14,215.27,143.09Zm7,59.68h57.46V401H222.27Z"></path>
+            </svg>
+        </a>
+        <a id="moreBtn" href="#more">
+            <svg id="more-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs>
+                <path class="cls-1" d="M251,27.5c121.78,0,220.5,98.72,220.5,220.5S372.78,468.5,251,468.5,30.5,369.78,30.5,248,129.22,27.5,251,27.5m0-20a240.56,240.56,0,0,0-93.62,462.09A240.56,240.56,0,0,0,344.62,26.41,238.94,238.94,0,0,0,251,7.5Z"/><circle class="cls-1" cx="132.73" cy="248" r="32.73"/><circle class="cls-1" cx="251" cy="248" r="32.73"/><circle class="cls-1" cx="369.27" cy="248" r="32.73"/></svg>
+        </a>
+        <a id="whereBtn" href="#where">
+            <svg id="where-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs>
+                <path class="cls-1" d="M251,27.5c121.78,0,220.5,98.72,220.5,220.5S372.78,468.5,251,468.5,30.5,369.78,30.5,248,129.22,27.5,251,27.5m0-20a240.56,240.56,0,0,0-93.62,462.09A240.56,240.56,0,0,0,344.62,26.41,238.94,238.94,0,0,0,251,7.5Z"/>
+                <path class="cls-1" d="M251,86.5A114.5,114.5,0,0,0,136.5,201c0,63.24,114.5,208.5,114.5,208.5S365.5,264.24,365.5,201A114.5,114.5,0,0,0,251,86.5Zm.5,171.5A58.5,58.5,0,1,1,310,199.5,58.5,58.5,0,0,1,251.5,258Z"/>
+            </svg>
+        </a>
+        <a id="whoBtn" href="#who">
+            <svg id="who-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs>
+                <path class="cls-1" d="M251,27.5c121.78,0,220.5,98.72,220.5,220.5S372.78,468.5,251,468.5,30.5,369.78,30.5,248,129.22,27.5,251,27.5m0-20a240.56,240.56,0,0,0-93.62,462.09A240.56,240.56,0,0,0,344.62,26.41,238.94,238.94,0,0,0,251,7.5Z"/>
+                <path class="cls-1" d="M391.67,381.7a198.43,198.43,0,0,1-281.34,0A141.34,141.34,0,0,1,228.5,255.26a71.53,71.53,0,1,1,45,0A141.34,141.34,0,0,1,391.67,381.7Z"/>
+            </svg>
+        </a>
+        <a id="supportBtn" href="#support">
+            <svg id="support-svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><defs><style>.cls-1{fill:#90e9f9;}</style></defs>
+                <path class="cls-1" d="M251,27.5c121.78,0,220.5,98.72,220.5,220.5S372.78,468.5,251,468.5,30.5,369.78,30.5,248,129.22,27.5,251,27.5m0-20a240.56,240.56,0,0,0-93.62,462.09A240.56,240.56,0,0,0,344.62,26.41,238.94,238.94,0,0,0,251,7.5Z"/>
+                <path class="cls-1" d="M402,289.81H290.61V398.64H208V289.81H97.29V211.7H208V102.88h82.58V211.7H402Z"/>
+            </svg>
+        </a>
+    </nav>
+    <div class="guide">
+        <h1> Click a menu option to proceed.</h1>
+    </div>
+    <!-- what page -->
+    <div class="page what" id="what">
+        <header class='whatTitle header anim1' id="whatTitle">
+            <h1>
+                WHAT IS MARFANS SYNDROME
+            </h1>
+        </header>
+        <div class='person3d anim1' id="person3d">
+            <img alt="wireframe" src="/Images/wireframe.png">
+            <sl-button-group class="body-btns">
+                <sl-tooltip class="donateBtn" id="spineBtn" content="Spine">
+                    <sl-button class="donateBtn">Spine</sl-button>
+                </sl-tooltip>
+            
+                <sl-tooltip class="donateBtn" id="eyesBtn" content="Eyes">
+                    <sl-button class="donateBtn">Eyes</sl-button>
+                </sl-tooltip>
+          
+                <sl-tooltip class="donateBtn" id="heartBtn" content="Heart">
+                  <sl-button class="donateBtn">Heart</sl-button>
+                </sl-tooltip>
+
+                <sl-tooltip class="donateBtn" id="lungsBtn" content="Lungs">
+                    <sl-button class="donateBtn">Lungs</sl-button>
+                </sl-tooltip>
+
+                <sl-tooltip class="donateBtn" id="boneBtn" content="Bones">
+                    <sl-button class="donateBtn">Bones</sl-button>
+                </sl-tooltip>
+
+                <sl-tooltip class="donateBtn" id="bodyBtn" content="Body">
+                    <sl-button class="donateBtn">Body</sl-button>
+                </sl-tooltip>
+             </sl-button-group>
+        </div>
+        <div class='whatIntro whatArea anim1'>
+            <div class='Intro'>
+                <h2>Marfans Syndrome</h2>
+                <p>Marfan syndrome is a chronic genetic illness with a significant impact on life 
+                    and on family. It is transmitted to 50% of children of patients with Marfan 
+                    syndrome and is caused by a mutation in the fibrillin-1 gene that controls 
+                    connective tissue in the body. It is associated with physical problems involving 
+                    a number of tissues including the aorta, the eyes and the skeleton.</p>
+                    <p>&nbsp;</p>
+                    <p>Click a button to learn about signs and symptoms of the disorder.</p>
+            </div>
+        </div>
+        <div class='whatInfo whatArea anim1' style="position: relative;">
+            <div class='popup spine' id="spine">
+                <h2>Tall & Thin</h2>
+                <p>Marfans people tend to be tall and thin. This can cause issues with the spine 
+                    such as Scoliosis, the serverity of which has an impact on back pain and the 
+                    need for surgery. </p>
+            </div>
+            <div class='popup eyes' id="eyes">
+                <h2>Eyes</h2>
+                <p>Eye problems, including severe nearsightedness, dislocated lens, 
+                    detached retina, early glaucoma, and early cataracts.</p>
+            </div>
+            <div class='popup heart' id="heart">
+                <h2>Heart</h2>
+                <p> A Harder-to-detect sign of Marfan syndrome include heart problems, especially 
+                    those related to the aorta, the large blood vessel that carries blood away 
+                    from the heart to the rest of the body. Which can become enlarged and risk rupturing.</p>
+            </div>
+            <div class='popup lungs' id="lungs">
+                <h2>Lungs</h2>
+                <p>People with Marfans coud suffer from sudden lung collapse and breathing 
+                    issues related to heart issues.</p>
+            </div>
+            <div class='popup bone' id="bone">
+                <h2>Bones & Joints</h2>
+                <p>The lack of connective tissue can cause the chest to sinks in or stick out. 
+                    Joints are extra flexible and offer bend further then normal. 
+                    Crowded teeth can also occur along with a raised palette.</p>
+            </div>
+            <div class='popup body' id="body">
+                <h2>Body Type</h2>
+                <p>Marfans people are usaully tall and thin. But can get stretch marks on the skin 
+                    that aren't explained by pregnancy or weight gain or loss.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- more page -->
+    <div class="page more" id="more" >
+        <header class='moreTitle header anim1' id="moreTitle">
+            <h1>
+                MORE IN-DEPTH INFORMATION
+            </h1>
+        </header>
+        <!-- discovery section -->
+        <div class="anim1" id="discovery">
+            <h2 class="dicoveryTitle">It's Discovery</h2>
+            <p class="discoveryInfo">
+                Antoine Bernard-Jean Marfan played an important role in the discovery of Marfan 
+                Syndrome. He was a French pediatrician born 
+                in 1858 and he was the first to report symptoms of Marfan Syndrome. He began 
+                medical studies in Toulouse and later on in 1896 found symptoms of Marfan Syndrome. 
+                "In 1896 he described the condition of a 5 year old girl," (Pickell). Another 
+                historical figure who was rumored to have Marfan Syndrome was Abraham Lincoln. 
+                Though he showed many symptoms, it was never proven. 
+                However Lincoln's great-great gandfather Mordecai Lincoln the second did have the syndrome.</p>
+        </div>
+        <!-- Daily LIfe section -->
+        <div class="anim1" id="dailyLife">
+            <h2 class="dailyTitle">Effects on Daily Life</h2>
+            <p class="dailyInfo">Because connective tissue is found throughout the body, Marfan syndrome can affect 
+                many different parts of the body, as well. Features of the disorder are most often 
+                found in the heart, blood vessels, bones, joints, and eyes. Some Marfan features – 
+                for example, aortic enlargement (expansion of the main blood vessel that carries 
+                blood away from the heart to the rest of the body) – can be life-threatening. 
+                The lungs, skin and nervous system may also be affected. Marfan syndrome does not 
+                affect intelligence.
+            
+                Patients with Marfan syndrome suffer from physical and psychosocial issues throughout 
+                their life. At present there is no curative treatment. Medical and surgical approaches 
+                have improved survival rate but quality of life, economic stability, educational 
+                opportunities, anxiety, depression and lack of social support all remain as overwhelming 
+                challenges for a person with Marfan syndrome.
+            </p>
+        </div>
+        <!-- dna section -->
+        <div class="anim1" id="dna" >
+            <div id="dna-content">
+                <h2 class="proteinTitle">Protein Fibrillin-1</h2>
+                <p class="proteinInfo">Connective tissue is made up of proteins. The protein that plays a role in Marfan 
+                syndrome is called fibrillin-1. Marfan syndrome is caused by a defect (or mutation) 
+                in the gene that tells the body how to make fibrillin-1. This mutation results in 
+                an increase in a protein called transforming growth factor beta, or TGF-β. The 
+                increase in TGF-β causes problems in connective tissues throughout the body, which 
+                in turn creates the features and medical problems associated with Marfan syndrome 
+                and some related conditions.
+                </p>
+            </div>
+            <div id="Container">
+                <iframe src='https://my.spline.design/dna-e5449c59a535ba428d35c1ff19987657/' frameborder='0' ></iframe>
+            </div>
+        </div>
+        <!-- heart 3d model section -->
+        <div class="heartDiv anim1">
+            <h2 class="heartTitle" style="text-align: center;">Heart Related Issues</h2>
+            <div id="heart3d">
+                <svg id="digi-heart" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080"><defs><style>.cls-1{fill:none;stroke:#90e9f9;stroke-miterlimit:10;stroke-width:20px;}</style></defs><polyline class="cls-1" points="684.5 747.5 648.5 694.5 637.05 619.07"/><polyline class="cls-1" points="510.5 612.5 561.5 598 592.5 480.5 655.25 434"/><path class="cls-1" d="M610.5,344.5l164,136,8,350-52,108L412,848,280.5,571.5v-88l124-130.12L540,261,796.5,150.5V222l-171,65.55-15,57,63,126-3,105-109,142"/><polyline class="cls-1" points="405 353 338.5 143.5 279.61 150.5 324.67 318.24 310.5 380.5 267.5 457.5 280.5 571.5"/><polyline class="cls-1" points="506 284 461.06 288.87 500.5 212.5 453 194.63 419.42 288.87 394 317"/><circle class="cls-1" cx="491" cy="621" r="21.5"/><circle class="cls-1" cx="551" cy="736" r="21.5"/><circle class="cls-1" cx="696" cy="766" r="21.5"/></svg>
+            </div>
+            <div style="text-align: center;">
+                <sl-button-group class="heart-btns">
+                    <sl-tooltip class="heart-btn aorta donateBtn"  content="Mines bigger then yours">
+                        <sl-button class="donateBtn">Aorta</sl-button>
+                    </sl-tooltip>
+                
+                    <sl-tooltip class="heart-btn mitral donateBtn"  content="Floppy Heart">
+                        <sl-button class="donateBtn">Mitral</sl-button>
+                    </sl-tooltip>
+              
+                    <sl-tooltip class="heart-btn exertion donateBtn"  content="I have a doctor note">
+                      <sl-button class="donateBtn">Exertion</sl-button>
+                    </sl-tooltip>
+
+                    <sl-tooltip class="heart-btn pectus donateBtn" content="Squeezing a little too hard">
+                        <sl-button class="donateBtn">Pectus</sl-button>
+                    </sl-tooltip>
+                 </sl-button-group>
+            </div>
+            <p class="heart-info">Press a button to learn more details about possible complication caused by Marfans Syndrome</p>
+        </div>
+    </div>
+    <!-- where page -->
+    <div class="page where" id="where">
+        <header class='whereTitle header anim1' id="whereTitle">
+            <h1>
+                WHERE TO FROM HERE?
+            </h1>
+        </header>
+        <!-- section that stays on top with the most importent information -->
+        <div class="anim1" id="doctor">
+            <h2>Book a doctors appointment</h2>
+            <p>The abosolute first thing to do is book an appointment when your doctor tell them about your
+                thoery and ask what to do next. If they are unsure, which is not uncommon because it is not 
+                a well know disorder, ask to get a referral to see a cardiologist and get and echo of your heart.
+                But always listen to professional advise as there is no nned to worry yourself, this is worse for your helth then having Marfans.</p>
+        </div>
+        <!-- section that changes when you press a button on the map,
+        It'd be easiest for the  text to be changed using java script -->
+        <div class="anim1" id="tips">
+            <h2>Life changes</h2>
+            <p> Small things in your daily schedule may need to change so that you can best look after youself.
+                (Still Under Construction)
+            </p>
+            
+        </div>
+        <div class="heartBeat anim1" id="heartAni">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.34 204.1" 
+            width="486.3399963378906" height="204.10000610351562">
+            <defs><style>.cls-1{fill:none;stroke:#90E9F9;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs>
+            <path class="cls-1 heartbeatsvg-1" d="M35.5,158.91H150.1a16.38,16.38,0,0,0,12.08-5.32l20-21.76a5.87,5.87,0,0,1,9.58,1.34l22.09,44.2a5.88,5.88,0,0,0,11-1.52L250.26,43.4a2.81,2.81,0,0,1,5.54.13l28.06,193.86a4.47,4.47,0,0,0,8.76.47l17.53-68.66a13.67,13.67,0,0,1,13.25-10.29h23.34a13.59,13.59,0,0,0,12.45-8.14l20.63-47.18a5,5,0,0,1,9.24,0l20.46,45.81a16.1,16.1,0,0,0,14.71,9.55h93.61" transform="translate(-33.5 -39.12)"></path></svg>        
+        
+        </div>
+        <!-- section for the map  -->
+        <div class="anim1" id="map">
+            <svg id="map-draw" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080"><defs><style>.cls-1{fill:none;stroke:#90e9f9;stroke-miterlimit:10;stroke-width:3px;}</style></defs><path class="cls-1 map-elem-1" d="M1001.06,722.46,1170,723l.06-20-168.57-.54,17.31-404.75,70.44-52.08,4.43,2.81,7.28-11.47,8-5.93L1097.05,215l-8.7,6.43-56-35.54,54-59.83,50.06,33.31,11.08-16.66L1100,111l26.47-29.31-14.84-13.4-28.47,31.51L1020.26,58l46.63-59.85-15.78-12.3-47.54,61L935.49,1.6,950-18,934-29.95,918.82-9.5,899.54-22.33,888.46-5.67,906.91,6.6,856.75,74.36l-47.7-30.29,33.55-52,9.24-3.84-2.65-6.37,2.21-3.44-5-3.21-2.27-5.44-3.75,1.56-5.81-3.75L829.17-24,714.85,23.49l-50.52-76L647.67-41.47l18.65,28.08L601,13.75,528.61-109.08,511.39-98.92l19.79,33.57L424.81-25,396-83.43,378-74.57,406-17.9,320.17,14.65,281.08-70.18l-18.16,8.36,38.5,83.58L225.85,50.41,172-61.34l-18,8.68L207.08,57.53,114.46,92.65l3.7,9.76-62-139.47L37.86-28.94l92.76,208.6-191.4,78.08,7.56,18.52L50.09,234.11,62.18,260l-95.92,38.71,7.48,18.54,96.91-39.1,6.62,14.16L-60,351.83l8,18.34L85.73,310.46,112,366.64-57.16,443.9l8.32,18.2,62.6-28.61,27.9,67.38-79.77,36,8.22,18.22,79.2-35.75,19,45.88L2.9,594.89l-11.36-5.8-7.26,14.23-56.41,25.57,8.26,18.22,66.26-30L74.8,654a35.68,35.68,0,0,0-.8,7.5,35.3,35.3,0,0,0,8.18,22.64l-12.4,21.28L-37,644.32-47,661.68l106.69,61-74,127-.81-.46-9.82,17.42.57.32L-79.64,962-62.36,972l55.44-95.19L49.5,908.61-28.64,1043-11.36,1053l78.28-134.6,22.61,12.73L-8.68,1103,8.68,1113,107,941l79.48,44.75-69.13,121.32,17.38,9.9,69.17-121.4L335,1069.38l-45.65,80.7,17.4,9.84,45.68-80.73,81.3,45.78-27.41,49.16,17.46,9.74L530.66,992.1l114.9,65.73-47.31,85.32,17.5,9.7L722.46,960.4,779.32,1046a50,50,0,1,0,92.08,33.78l89-24.9,24.46,30.89L955,1114.84l14,14.32,110.35-107.57,13.49,21.81L1018,1099,1030,1115l73.41-54.55,22.12,35.78,17-10.52-23-37.24L1139,1034,1127,1018l-18.11,13.46-73.1-118.23,0-1.2-.71,0L1002,858.45ZM822,1022a49.69,49.69,0,0,0-28.6,9l-59.67-89.81L865,935.65l-36.9,86.73A50.59,50.59,0,0,0,822,1022ZM94,661.5A15.5,15.5,0,1,1,109.5,677,15.51,15.51,0,0,1,94,661.5ZM136.05,638l14.79-23.76,52.61,29.69-26.31,45.23L143.8,670.66A35.45,35.45,0,0,0,136.05,638Zm32.29-422.69,60.38-25.1,43.69,103.15-57.65,26.34ZM348,140.61l22.15,92.54-87,34.11-35.9-84.75ZM565.47,50.2l-106.18,148-70.37,27.58-22.24-92.95ZM897.18,800.76l.62,45.12-104.16,1,27.58-43ZM602.57,743.83l-.24-.36-.19.12-45.35-25.7,28.15-49.76,78.89,44.07-28.11,50.41ZM233.14,720.15l25.71-45L338,719.82,312.66,764.2Zm69.62,61.43-24.54,43.08-79-45.18,24-42ZM285,477.71l-24-53.93L317,398.54l12.29,29-32.85,56.49Zm6.13-192.13L376.83,252l70.1,184L428,464.79l-79.25-42.43L298.41,303.44l.75-.34Zm170.75-66.92L487.37,276,419,306.41l-23.5-61.7ZM622.42,205.4,664,232,582.28,358.71l-43.47-26.08Zm250.67,79.12L805.52,382,739.29,339l68.41-96.48ZM823.25,417.39l-76.36,56.45L679.69,423l48-67.74Zm41.29-5.65,22.05,30.34-31.76,24.39-33.51-22.78Zm125.88,80.67L962.83,513l-19.45-26.76L972.6,464.3l17.91,26.09Zm-43.63,32.51-33.47,24.92-18.57-27.15,32.63-24.48Zm-63.35-18.75-16.35-23.9,31.26-24L915.62,482Zm-423-1.34-30.63,53.75-79.1-44.18,29.89-52.31Zm67.37-155.48,43.61,26.17L518.22,458l-45.67-24.55ZM683.24,450.79l-29.87,40.46L608,457l30.22-40.28ZM580,461l8,6,53.45,40.31-.53.72L657,519.94l42.16-57.08,30.92,23.38L660,538.09a44.46,44.46,0,0,0-71.75,12.48L509.5,508.41l82-127,30.8,23.28Zm224.28-4.71,33.84,23-48.79,37.47L760.7,488.5ZM604,569.5A24.5,24.5,0,1,1,628.5,594,24.53,24.53,0,0,1,604,569.5ZM461.52,450.24l45.83,24.63-15.54,24.07-46.08-24.67Zm16.56,64,45.85,24.54-31.61,54.67-45-25.16Zm63.49,34L584,571A44.36,44.36,0,0,0,599,602.74L577.33,641l-67.55-37.73Zm74.93,64.07a44.31,44.31,0,0,0,37.58-6.46l52.57,29.53-33.08,59.32-78.78-44ZM724.09,645.2,757.63,664l-32,59.77L691,704.48Zm-56.41-54.62a44.37,44.37,0,0,0,2.92-35.46l73.83-54.58,65.9,65.07-43.26,80.8Zm156.17-39.72L803.69,531l47.51-36.48,16.23,23.71ZM663.73,411l-61.41-46.44,41.25-63.93,67.36,43.78Zm-137.18-96.1L513.76,286.1l44.8-19.94Zm-13.06,19.86-53,80.68-34.4-90.29,69.41-30.89ZM343.79,442.37,363,452.64l-29.71,52-19.39-10.82ZM323.33,522l-72,126-20.43-11.53,72.9-125.34Zm17.47,9.75L419.92,576,347.85,702.45l-79.08-44.64Zm14.56,197.9,130.21,73.49-24.48,43.28L330.16,773.9Zm9.91-17.38,72.11-126.57L482.3,610.8l-36,62.19,3,1.73-2.26,4,82.47,46.74-34.12,60.31Zm106.18-42.75,28.32-49,67.71,37.82L539.39,708ZM681.29,722l34.91,19.5-27.43,51.23-35.65-20.2Zm52.37,29.25,71.81,40.11-31.73,49.52-67.56-38.29Zm9.44-17.63,32-59.73,77.69,43.64-36.49,57Zm116.39-35.25-75-42.12,45.48-85,48.73-36.55,18.54,27.1L897,562l.93,1.26Zm56.56-125.57,42.49-31.66,28.14,38.73-2.25,52.7-82-11.84Zm58.53-43.6,14.74-11-1.26,29.52Zm14-76.86,3.63-2.73-.32,7.56Zm4.74-28.56-16.07,12.06-17.14-25L995.06,384ZM961.27,447.8,931.62,470l-17.4-23.95,30-23.07Zm-58.81-17.9-21.84-30,31.67-23.42,20.64,30.07Zm-62-25.2L822.3,392.92l67.62-97.58,52.64,33.84Zm25.49-148.57,79.37-101.88L1001.63,190l-86,95.27,10.59,9.57ZM849,245.27l-63.63-40.91,76.36-103.14,66.56,42.26Zm-58.16-13.61-68.35,96.4-68.1-44.27,63.77-98.86Zm-116-16.51L633.4,188.69l33-50.17,77.56-30.4Zm-96,20.07-73.25,32.6-25.1-56.47,153.59-60.19ZM280.21,311.75l29,68.36L252.93,405.5l-30-67.56Zm-45.51,102-65,29.34-31.11-66.62,66.08-30.2ZM242.82,432l20,45.06L199.09,506l-20.91-44.78Zm-61.95,82.22-34.08,15.44-20.37-45.12L160,469.42Zm-6.94,25.1-29.93,48-33.89-19.12Zm32.83-14.88,66.77-30.26,12.82,7.16L213.5,626.61l-52.07-29.39Zm14.11,129.29,20.56,11.6-25.78,45.12-21-11.63Zm-15.15,74.09-23.84,41.72-21.29-12.18,24-41.25ZM172,786.91,137.05,848l-22-12.26,35.53-61.08Zm17.36,9.94,79,45.18-34.17,60-79.61-44.29ZM285.67,852l130.16,74.46-33,58.31-131.22-73Zm9.91-17.37,24.67-43.32,131,72.57L425.68,909Zm173.15,38.94L549.06,918,523,964.7l-80-45.76Zm9.85-17.41L503,813l79.6,44.93L558.8,900.56Zm113.75-15.68-79.49-44.86,34.1-60.28,41.62,23.58,26.77,40.3Zm51-50.5,36,20.37-14.54,27.16-26-39.2Zm53.35,30.24,66.21,37.51-41,64-1.14,0-43.44-65.37Zm176.92,95.08-127.31,5.4L780.75,867l113.89-1.05ZM917.8,845.7,917.17,800l64.4-2.57.32,47.72Zm63.63-68.33-147,5.89,39.21-61.21,107.47.34Zm-102.21-75.3,17.65-62,86.7,12.51-2.13,49.8ZM996.17,357.94,948.81,394.3l-20.43-29.76,32.18-23.79,1,.66,1.75-2.72L998.09,313Zm74.94-123.8L959.77,316.46,931.05,298l87.71-97.1Zm-1.55-119.32L1015.23,175l-57.6-36.57,50.31-64.58Zm-146-97.13,67.66,45-50.58,64.92-67-42.53ZM844.82,90.47,768.53,193.53,729,168.13,798.21,60.88ZM810.08,5.58,757.31,87.39,726.13,40.47Zm-75,84.52L493.53,184.78l107-149.16,77.06-32Zm-193.61-138,40.9,69.37L470.7,67.93,433.7-7ZM414.91.12l37.28,75.5L365,111.88l-36.41-79ZM309.81,40l36.68,79.6-72.75,30.24L234.57,68.5Zm-94,35.65,39.45,81.88-95,39.5-38.17-85.84ZM68.63,226.55l70.12-28.61L164,254.74,95.63,284.37Zm35.46,75.95,68-29.49,24.44,55-66.42,30.34Zm47.4,148.8-33.31,15L88,399.56l32.39-14.8ZM32,425.17l37.87-17.3L100,474.56,59.9,492.64Zm35.58,86,40.64-18.35,20.39,45.15L86.54,557ZM25.7,606.51l61.84-28,45.87,25.89-14.3,23a35.43,35.43,0,0,0-34.73,9.11Zm73.1,88.84a35.47,35.47,0,0,0,34.58-7.6l33.71,18.67-23.86,41L87.14,715.36Zm34.38,69.38L97.53,826,41,794.57l36.08-61.93Zm-130,94.83,27.79-47.7,56.54,31.45-27.93,48ZM77,901.14,105,853l22.17,12.34L99.46,913.8Zm39.9,22.47,27.73-48.52,79.63,44.3-27.9,49Zm96.88,54.56,28-49.06,131.28,73L344.8,1052Zm148.47,83.61,28.24-49.92L471.59,1057l-28.17,50.52Zm119.1-22.27-81-45.06,32.87-58.1,80.11,45.82Zm59.07-64.87,26.16-46.92,115.63,64.06-26.93,48.56Zm151.49-.35-115.59-64,51.49-92.34L710,941.64ZM822,1102a30,30,0,1,1,30-30A30,30,0,0,1,822,1102Zm25.09-73.22L887,934.87l51.19-1,2.5,105.71-70.38,19.69A50.14,50.14,0,0,0,847.09,1028.78ZM960.6,1034,958.23,933.5l65.85-1.27,44.29,71.64Zm20.7,15,57.87-16.19-39.9,38.89ZM895.62,914.7l20.84-49,66.12-.6,29.28,47.35Z"></path></svg>
+            <div class="map-marker-container">
+                <img alt="map marker" class='map-marker gym' src="/Images/map_marker.svg">
+                <img alt="map marker" class='map-marker shopping' src="/Images/map_marker.svg">
+                <img alt="map marker" class='map-marker supermarket' src="/Images/map_marker.svg">
+                <img alt="map marker" class='map-marker clubs' src="/Images/map_marker.svg">
+                <img alt="map marker" class='map-marker hospital' src="/Images/map_marker.svg">
+            </div>
+        </div>
+    </div>
+    <!-- who page -->
+    <div class="page who" id="who">
+        <header class='whoTitle header anim1' id="whoTitle">
+            <h1>
+                WHO CAN GET MARFANS
+            </h1>
+        </header>
+        <!-- 1 in 5000 -->
+        <div class="anim1" id="stat">
+            <h2>1 in 5000</h2>
+            <p>Around 1 in every 5,000 people have Marfan syndrome and every person with Marfan 
+                syndrome has a family where 50% of siblings have the disease. For Australia’s 
+                current population of 25 million people, there are approximately 5,000 people with 
+                Marfan syndrome. Males and females are equally affected.</p>
+                <p>Even some famous people have the syndrome. See the slider for examples.</p>
+        </div>
+        <!-- info on family genetics -->
+        <div class="anim1" id="family">
+            <h2>Family Genetics</h2>
+            <p>About 3 out of 4 people with Marfan syndrome inherit it, meaning they get the genetic 
+                mutation from a parent who has it. But some people with Marfan syndrome are the first 
+                in their family to have it; when this happens it is called a spontaneous mutation. 
+                There is a 50 percent chance that a person with Marfan syndrome will pass along the 
+                genetic mutation each time they have a child.</p>
+        </div>
+        <!-- carousel of famous people with marfans syndrome -->
+        <div class="anim1" id="famous">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <h2>Micheal Phelps</h2>
+                      <img alt="famous person" src="images/famous/MichealPhelps.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Javier Botet</h2>
+                    <img alt="famous person" src="images/famous/JavierBotet.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Peter Mayhew</h2>
+                    <img alt="famous person" src="images/famous/PeterMayhew.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Bradford Cox</h2>
+                    <img alt="famous person" src="images/famous/BradfordCox.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Troye Sivan</h2>
+                    <img alt="famous person" src="images/famous/TroyeSivan.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Sergei Rachmaninoff</h2>
+                    <img alt="famous person" src="images/famous/SergeiRachmaninoff.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Flo Hyman</h2>
+                    <img alt="famous person" src="images/famous/FloHyman.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Isaiah Austin</h2>
+                    <img alt="famous person" src="images/famous/IsaiahAustin.jfif">
+                  </div>
+                  <div class="swiper-slide">
+                    <h2>Vincent Schiavelli</h2>
+                    <img alt="famous person" src="images/famous/VincentSchiavelli.jfif">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </div>
+    <!-- support page  -->
+    <div class="page support" id="support">
+        <header class='supportTitle header anim1' id="supportTitle">
+            <h1>
+                SUPPORT
+            </h1>
+        </header>
+        <!-- Donate -->
+        <div class="donate content-bubble anim1">
+            <h2>Donate</h2>
+            <p>Show your support by donating to help people with this disorder</p>
+            <sl-button class="donateBtn" size="medium" pill href="https://marfan.org.au/donate">DONATE</sl-button>
+        </div>
+        <!-- Share with friends -->
+        <div class="socails content-bubble anim1">
+            <h2>Share</h2>
+            <p>The best thing you can do is raise awareness, if Marfans is discovered early it can be treated
+                and monitored to allow a better life for someone with the disorder.
+            </p>
+            <sl-button-group>
+                <sl-tooltip content="Facebook">
+                    <sl-button class="donateBtn" href="https://www.facebook.com/TheMarfanFoundation/"><i class="fab fa-facebook"></i></sl-button>
+                </sl-tooltip>
+                
+                <sl-tooltip content="Twitter">
+                    <sl-button class="donateBtn" href="https://twitter.com/MarfanFdn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></sl-button>
+                </sl-tooltip>
+              
+                <sl-tooltip content="Youtube">
+                  <sl-button class="donateBtn" href="https://www.youtube.com/watch?v=p4Ev9KEyw78&ab_channel=Osmosis"><i class="fab fa-youtube"></i>
+
+                  </sl-button>
+                </sl-tooltip>
+              </sl-button-group>
+            <!-- insert socail media icons -->
+        </div>
+        <!-- Learn more -->
+        <div class="knowledge content-bubble anim1">
+            <h2>Learn More</h2>
+            <p> If you want to do your own research or ask your doctor about something. 
+                Here is a list of terms.
+            </p>
+            <ul>
+                <li>Aorta</li>
+                <li>Mitral Valve</li>
+                <li>Pectus Excavatum </li>
+                <li>Scoliosis </li>
+                <li>Connective Tissue </li>
+                <li>Protein Fibrillin-1 </li>
+
+            </ul>
+            <!-- insert list of terms with quick links to wikipedia articles -->
+        </div>
+        <!-- Join the community -->
+        <div class="community content-bubble anim1">
+            <h2>Join the community</h2>
+            <p>If you'd like to connect with like minded people, 
+                below are links to groups who live with this everyday and could give there support.
+            </p>
+            <a href="https://www.facebook.com/groups/888424367845015/">Marfan Network Australia</a>
+            <a href="https://www.facebook.com/groups/2204143971/"> Marfan Syndrome</a>
+            <a href="https://www.facebook.com/groups/1513449522214589/">Marfan Syndrome Disorder Australia</a>
+        </div>
+        <div class="heartBeat anim1">
+            <svg class="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.34 204.1" 
+            width="486.3399963378906" height="204.10000610351562">
+            <defs><style>.cls-1{fill:none;stroke:#90E9F9;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs>
+            <path class="cls-1 heartbeatsvg-1" d="M35.5,158.91H150.1a16.38,16.38,0,0,0,12.08-5.32l20-21.76a5.87,5.87,0,0,1,9.58,1.34l22.09,44.2a5.88,5.88,0,0,0,11-1.52L250.26,43.4a2.81,2.81,0,0,1,5.54.13l28.06,193.86a4.47,4.47,0,0,0,8.76.47l17.53-68.66a13.67,13.67,0,0,1,13.25-10.29h23.34a13.59,13.59,0,0,0,12.45-8.14l20.63-47.18a5,5,0,0,1,9.24,0l20.46,45.81a16.1,16.1,0,0,0,14.71,9.55h93.61" transform="translate(-33.5 -39.12)"></path></svg>        
+        </div>
+
+
+    </div>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
